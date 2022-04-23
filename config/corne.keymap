@@ -17,24 +17,24 @@
 // |  ESC |  P  |  W  |  R  |  A  |  F  |   |     |  7   |  8  |  9  |  P  | BSPC |
 // |  TAB |  D  |  T  |  H  |  E  |  O  |   |     |  4   |  5  |  6  |  ;  |  '   |
 // | BKSP |  Y  |  S  |  N  |  I  |  U  |   |  0  |  1   |  2  |  3  |  /  | ESC  |
-//                    | OPT | CMD | SPC |   | ENT | SHFT | DEL |
+//                    | GUI |  1  | SPC |   | ENT | SHFT | DEL |
                         bindings = <
    &kp ESC   &kp P &kp W &kp R &kp A &kp F   &kp   &kp 7  &kp 8     &kp 9   &kp P    &kp BSPC
    &kp TAB   &kp D &kp T &kp H &kp E &kp O   &kp   &kp 4  &kp 5     &kp 6   &kp SEMI &kp SQT
-   &kp BKSP  &kp Y &kp S &kp N &kp I &kp U   &kp 0 &kp 1  &kp 2     &kp 3   &kp FSLH &kp ESC
-                &kp OPT &kp LCMD &kp SPACE   &kp RET &kp SHFT &kp DEL
+   &kp BSPC  &kp Y &kp S &kp N &kp I &kp U   &kp 0 &kp 1  &kp 2     &kp 3   &kp FSLH &kp ESC
+                 &kp LGUI &mo 1  &kp SPACE   &kp RET &kp SHFT &kp DEL
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  J  |  M  |  B  |  ,  | TAB |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR|  V  |  C  |  L  |  Z  |  Q  |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |  X  |  G  |  K  |     | GUI |   |     |     |     |     |     |      |
+// |  ESC |  J  |  M  |  B  |  ,  | TAB |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  TAB |  V  |  C  |  L  |  Z  |  Q  |   | LFT | DWN |  UP | RGT |     |      |
+// | BSPC |  X  |  G  |  K  |     | GUI |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp ESC    &kp J       &kp M       &kp B       &kp ,       &kp TAB         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp TAB    &kp V   &kp C &kp L &kp Z &kp Q   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp BSPC  &kp X    &kp G       &kp K       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
