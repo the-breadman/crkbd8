@@ -17,12 +17,12 @@
 // |  ESC |  P  |  W  |  R  |  A  |  F  |   |     |  7   |  8  |  9  |  P  | BSPC |
 // |  TAB |  D  |  T  |  H  |  E  |  O  |   |     |  4   |  5  |  6  |  ;  |  '   |
 // | BKSP |  Y  |  S  |  N  |  I  |  U  |   |  0  |  1   |  2  |  3  |  /  | ESC  |
-//                    | GUI |  1  | SPC |   | ENT | SHFT | DEL |
+//                    | GUI | LWR | SPC |   | ENT | SHFT | DEL |
                         bindings = <
    &kp ESC   &kp P &kp W &kp R &kp A &kp F   &kp   &kp 7  &kp 8     &kp 9   &kp P    &kp BSPC
    &kp TAB   &kp D &kp T &kp H &kp E &kp O   &kp   &kp 4  &kp 5     &kp 6   &kp SEMI &kp SQT
    &kp BSPC  &kp Y &kp S &kp N &kp I &kp U   &kp 0 &kp 1  &kp 2     &kp 3   &kp FSLH &kp ESC
-                 &kp LGUI &mo 1  &kp SPACE   &kp RET &kp SHFT &kp DEL
+                 &kp LGUI &lt LOWER LCMD  &kp SPACE   &kp RET &kp SHFT &kp DEL
                         >;
                 };
                 lower_layer {
