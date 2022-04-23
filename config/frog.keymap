@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  P  |  W  |  R  |  A  |  F  |   |     |  7   |  8  |  9  |  P  | BKSP |
+// |  TAB |  D  |  T  |  H  |  E  |  O  |   |     |  4   |  5  |  6  |  ;  |  '   |
+// | BKSP |  Y  |  S  |  N  |  I  |  U  |   |  0  |  1   |  2  |  3  |  /  | ESC  |
+//                    | OPT | CMD | SPC |   | ENT | SHFT | DEL |
+                        bindings = <
+   &kp ESC   &kp P &kp W &kp R &kp A &kp F   &kp   &kp 7  &kp 8     &kp 9   &kp P    &kp BSPC
+   &kp TAB &kp D &kp T &kp H &kp E &kp O   &kp   &kp 4  &kp 5     &kp 6   &kp SEMI &kp SQT
+   &kp BKSP &kp Y &kp S &kp N &kp I &kp U   &kp 0 &kp 1  &kp 2     &kp 3   &kp FSLH &kp ESC
+                  &kp OPT &mo CMD &kp SPACE   &kp RET &mo SHFT &kp DEL
+                        >;
+                };
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  J  |  M  |  B  |  ,  | TAB |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR|  V  |  C  |  L  |  Z  |  Q  |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |  X  |  G  |  K  |     | GUI |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                        >;
+                };
+
+                raise_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
+        };
+};
