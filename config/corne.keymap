@@ -22,28 +22,28 @@
 
         default_layer {
             bindings = <
-  &kp BSPC   &kp P   &kp W       &kp R   &kp A        &kp F            &kp Y   &kp U      &kp I    &kp O     &kp P  &kp BSLH
-   &kp TAB   &kp D   &kp T       &kp H   &kp E        &kp O            &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp APOS
- &kp ENTER   &kp Y   &kp S       &kp N   &kp I        &kp U            &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                            &kp LSHIFT   &to 1  &lt 2 SPACE          &kp RET   &mo 2   &kp RALT
+  &kp BSPC   &kp P   &kp W   &kp R           &kp A        &kp F            &kp Y   &kp U      &kp I    &kp O     &kp P  &kp BSLH
+   &kp TAB   &kp D   &kp T   &kp H           &kp E        &kp O            &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp APOS
+ &kp ENTER   &kp Y   &kp S   &kp N           &kp I        &kp U            &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+                             &to 1  &kp LEFT_SHIFT  &lt 2 SPACE          &kp RET   &mo 2   &kp RALT
             >;
         };
 
         layer_raise {
             bindings = <
-   &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp N7    &kp N8  &kp N9     &kp CLEAR          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
- &kp KP_SUBTRACT      &kp KP_PLUS  &kp N4    &kp N5  &kp N6      &kp BSPC          &trans  &trans  &trans  &trans  &trans  &trans
-       &kp EQUAL           &kp N0  &kp N1    &kp N2  &kp N3    &kp PERIOD          &trans  &trans  &trans  &trans  &trans  &trans
-                                           &kp LGUI   &to 0  &kp KP_ENTER          &trans  &trans  &trans
+   &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp N7  &kp N8    &kp N9     &kp CLEAR          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+ &kp KP_SUBTRACT      &kp KP_PLUS  &kp N4  &kp N5    &kp N6      &kp BSPC          &trans  &trans  &trans  &trans  &trans  &trans
+       &kp EQUAL           &kp N0  &kp N1  &kp N2    &kp N3    &kp PERIOD          &trans  &trans  &trans  &trans  &trans  &trans
+                                            &to 0  &kp LGUI  &kp KP_ENTER          &trans  &trans  &trans
             >;
         };
 
         layer_lower {
             bindings = <
- &trans   &kp J   &kp M     &kp B  &kp APOSTROPHE    &kp TAB          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
- &trans   &kp V   &kp C     &kp L           &kp Z      &kp Q          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
- &trans   &kp X   &kp G     &kp K       &kp K_APP     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                         &kp LGUI          &trans  &kp SPACE             &trans     &trans           &trans
+  &kp BSPC   &kp J   &kp M       &kp B  &kp APOSTROPHE    &kp TAB          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
+   &kp TAB   &kp V   &kp C       &kp L           &kp Z      &kp Q          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+ &kp ENTER   &kp X   &kp G       &kp K       &kp K_APP     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                            &kp LSHIFT          &trans  &kp SPACE             &trans     &trans           &trans
             >;
         };
 
